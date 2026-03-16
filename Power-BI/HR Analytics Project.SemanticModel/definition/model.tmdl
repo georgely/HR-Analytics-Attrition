@@ -1,0 +1,19 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["hr_employee_attrition","hr_employee_attrition (2)"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table hr_employee_attrition
+ref table 'hr_employee_attrition (2)'
+
+ref cultureInfo en-US
+
